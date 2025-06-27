@@ -312,8 +312,7 @@ $(document).ready(function () {
       $("[order-number]").text(customerData.orderNumber || "N/A");
 
       break;
-    case "/index.html":
-      break;
+
     default:
       // window.location.href = "/index.html";
       break;
