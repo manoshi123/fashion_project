@@ -9,7 +9,7 @@ $(document).ready(function () {
   console.log(window.location.pathname);
 
   switch (window.location.pathname) {
-    case "/home.html":
+    case "/index.html":
     case "/":
       $.ajax({
         url: `${APIURL}/products?limit=8&start=0`,
@@ -78,7 +78,7 @@ $(document).ready(function () {
       console.log(productId);
 
       if (productId == null || productId == "") {
-        window.location.href = "/home.html";
+        window.location.href = "/index.html";
       }
 
       $.ajax({
@@ -315,7 +315,7 @@ $(document).ready(function () {
     case "/index.html":
       break;
     default:
-      // window.location.href = "/home.html";
+      // window.location.href = "/index.html";
       break;
   }
 
