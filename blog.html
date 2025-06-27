@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+   
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" />
+
+  </head>
+  <body>
+  
+
+ <!----------------------------------header start---------------------------------->
+   <header class="header bg-light">
+      <div id="header">
+        <div class="container header_wrap">
+          <div class="logo">
+            <a href="#" class="text-uppercase"
+              ><img src="images/logo.png" alt="logo" class="logo-img"
+            /></a>
+          </div>
+
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+
+          <div class="menu-overlay"></div>
+
+          <!-- navigation menu start -->
+
+          <nav class="nav-menu d-lg-block">
+            <div class="close-nav-menu"><i class="fas fa-times"></i></div>
+
+            <ul class="menu fw-medium text-uppercase" list-type="none">
+              <li class="menu-item menu-item-has-children">
+                <a href="home.html">Home </a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="blog.html" class="active">Blog</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-md-none d-sm-block">
+              <ul class="icon_list">
+                <li>
+                  <a href="#"><img src="images/user.svg" alt="cart" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/cart.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><img src="images/love.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+              </ul>
+              <div class="wrap">
+                <form method="get" class="search-form" action="shop.html">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="searchTerm"
+                      name="s"
+                      placeholder="What are you looking for?"
+                    />
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navigation menu end -->
+          <div class="cart_icon d-md-block d-sm-none d-none">
+            <ul class="icon_list">
+              <li>
+                <div class="input-box search">
+                  <form method="get" class="search-form" action="shop.html">
+                    <input
+                      class="search-field"
+                      id="search-field"
+                      type="text"
+                      name="s"
+                      value=""
+                      aria-required="false"
+                      autocomplete="off"
+                      placeholder="Search&hellip;"
+                    />
+                    <button class="search-submit">
+                      <span class="screen-reader-text">Search</span
+                      ><a href="#"
+                        ><img
+                          src="images/search.svg"
+                          alt="cart"
+                          class="search_icon"
+                      /></a>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a href="product.html"><img src="images/user.svg" alt="cart" /></a>
+              </li>
+              <li>
+                <a href="cart.html"><img src="images/cart.svg" alt="cart" /></a>
+                <div class="cart_count">
+                  <h5>0</h5>
+                </div>
+              </li>
+
+              <li>
+                <a href="wishlist.html"><img src="images/love.svg" alt="cart" /></a>
+                <div class="count">
+                  <h5>0</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+  <!----------------------------------header end---------------------------------->
+
+    
+<!------------------------------------banner start------------------>
+ <section class="blog_bg banner-text">
+  <div class="container">
+    <h2>Blogs</h2>
+    <div class="linkup">
+      <a href="home.html" class="active">Home /</a>
+      <a href="blog.html">Blogs</a>
+    </div>
+  </div>
+ </section>
+ <!------------------------------------banner end------------------------------------>
+
+ <!------------------------------------Latest Blog start---------------------->
+  <section class="latest_blog banner-text">
+    <div class="container">
+      <h2>Our Latest Blog</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+           <img src="images/blog1.jpg" srcset="images/blog1.jpg 1x, images/blog1@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>07 February 2025</h5>
+            <h3>The Capsule Wardrobe: How to Build a Timeless Closet</h3>
+            <p>If you’ve ever stared at a full closet and thought, “I have nothing to wear,” 
+              a capsule wardrobe might be the solution. This minimalist fashion 
+              approach involves curating a collection of versatile, high-quality pieces
+               that can be mixed and matched for any occasion. Think classic items 
+               like a well-fitted blazer, neutral-toned tees, a pair of tailored trousers, 
+               and a little black dress.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+            <img src="images/blog2.jpg" srcset="images/blog2.jpg 1x, images/blog2@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>17 February 2025</h5>
+            <h3>Top 5 Fashion Trends You’ll See Everywhere This Year</h3>
+            <p>Fashion trends in 2025 are bold, expressive, and rooted in comfort. First,
+               oversized blazers are making a strong comeback, pairing perfectly with
+                everything from jeans to skirts. Second, monochrome outfits are
+                 dominating runways and streetwear—think head-to-toe beige, black, or 
+                 even bold red. Third, wide-leg trousers and relaxed-fit denim are 
+                 replacing skinny jeans, offering both comfort and elegance.</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+       <div class="row">
+        <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+            <img src="images/blog3.jpg" srcset="images/blog3.jpg 1x, images/blog3@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>08 March 2025</h5>
+            <h3>Choosing the Right Fit</h3>
+            <p>One of the biggest fashion mistakes people make is focusing only on
+               style and ignoring fit. You could wear the most expensive or trendy
+                clothes, but if they don’t fit properly, they won’t look right. Tailoring
+                 ensures that your clothes complement your body’s shape and size. A
+                  perfectly tailored blazer sharpens your silhouette, while hemmed pants
+                   can elongate your legs.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+            <img src="images/blog4.jpg" srcset="images/blog4.jpg 1x, images/blog4@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>20 February 2025</h5>
+            <h3>Denim for Every Body: Finding the Perfect Fit</h3>
+            <p>Denim is a wardrobe staple, but finding the perfect pair of jeans can feel
+               like a quest. The truth is, there’s no one-size-fits-all when it comes to
+                denim—different cuts and washes suit different body types and style 
+                preferences. High-waisted jeans are flattering for most shapes, as they
+                 accentuate the waist and elongate the legs.</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+
+
+       <div class="row">
+        <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+            <img src="images/blog5.jpg" srcset="images/blog5.jpg 1x, images/blog5@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>09 April 2025</h5>
+            <h3>Seasonal Style Guide: What to Wear This Spring</h3>
+            <p>Spring is all about renewal—and that includes your wardrobe. As
+               temperatures rise, it's time to swap heavy layers for breezy, lightweight
+                fabrics. Pastel colors, floral prints, and soft neutrals are key this season,
+                 bringing a fresh and romantic feel to your outfits. Linen dresses, cotton
+                  blouses, and flowy midi skirts are must-haves, offering comfort and
+                   elegance.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6">
+          <div class="blog-box">
+            <div class="blog-img">
+            <img src="images/blog6.jpg" srcset="images/blog6.jpg 1x, images/blog6@2x.jpg 2x">
+            </div>
+            <div class="blog-txt">
+            <h5><i class="fa-regular fa-calendar-minus"></i>10 April 2025</h5>
+            <h3>Color Confidence: How to Mix and Match Like a Stylist</h3>
+            <p>Playing with color can feel intimidating, but when done right, it can
+               transform your look and boost your confidence. Start by learning basic
+                color theory—complementary colors (like blue and orange) make bold
+                 statements, while analogous shades (like pink and red) create a soft,
+                  cohesive look. Neutrals like beige, white, black, and gray act as anchors,
+                   allowing brighter colors to shine.</p>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+ <!------------------------------------Latest Blog end------------------------------------>
+
+    <!----------------------------------------footer start---------------------------------------->
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 ">
+            <div class="box">
+              <img src="images/logo white.svg" alt="" />
+              <h5>
+                Complete your style with awesome clothes<br />
+                from us.
+              </h5>
+            </div>
+            <div class="footer-icon d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Company</h4>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="home.html">About</a></li>
+              <li><a href="cheackout.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Quick Link</h4>
+              <li><a href="#">Share Location</a></li>
+              <li><a href="#">Orders Tracking</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Legal</h4>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------footer end------------------------------------>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script> 
+<script src="js/style.js"></script> 
+
+
+  </body>
+</html>

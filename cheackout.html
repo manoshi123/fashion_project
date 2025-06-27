@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/cheackout.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <!----------------------------------header start---------------------------------->
+    <header class="header bg-light">
+      <div id="header">
+        <div class="container header_wrap">
+          <div class="logo">
+            <a href="#" class="text-uppercase"
+              ><img src="images/logo.png" alt="logo" class="logo-img"
+            /></a>
+          </div>
+
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+
+          <div class="menu-overlay"></div>
+
+          <!-- navigation menu start -->
+
+          <nav class="nav-menu d-lg-block">
+            <div class="close-nav-menu"><i class="fas fa-times"></i></div>
+
+            <ul class="menu fw-medium text-uppercase" list-type="none">
+              <li class="menu-item menu-item-has-children">
+                <a href="home.html" class="active">Home </a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="blog.html">Blog</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-md-none d-sm-block">
+              <ul class="icon_list">
+                <li>
+                  <a href="#"><img src="images/user.svg" alt="cart" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/cart.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><img src="images/love.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+              </ul>
+              <div class="wrap">
+                <form method="get" class="search-form" action="shop.html">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="searchTerm"
+                      name="s"
+                      placeholder="What are you looking for?"
+                    />
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navigation menu end -->
+          <div class="cart_icon d-md-block d-sm-none d-none">
+            <ul class="icon_list">
+              <li>
+                <div class="input-box search">
+                  <form method="get" class="search-form" action="shop.html">
+                    <input
+                      class="search-field"
+                      id="search-field"
+                      type="text"
+                      name="s"
+                      value=""
+                      aria-required="false"
+                      autocomplete="off"
+                      placeholder="Search&hellip;"
+                    />
+                    <button class="search-submit">
+                      <span class="screen-reader-text">Search</span
+                      ><a href="#"
+                        ><img
+                          src="images/search.svg"
+                          alt="cart"
+                          class="search_icon"
+                      /></a>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a href="product.html"><img src="images/user.svg" alt="cart" /></a>
+              </li>
+              <li>
+                <a href="cart.html"><img src="images/cart.svg" alt="cart" /></a>
+                <div class="cart_count">
+                  <h5>0</h5>
+                </div>
+              </li>
+
+              <li>
+                <a href="wishlist.html"><img src="images/love.svg" alt="cart" /></a>
+                <div class="count">
+                  <h5>0</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------header end---------------------------------->
+
+    <!------------------------------------contact start------------------------------------>
+    <section class="contact_from chng_color cart">
+      <div class="container">
+        <div class="contact_heading">
+          <h5>
+            <a href="./cart.html"><span class="step active">Cart</span></a>
+
+            <a href="./cheackout.html"
+              ><span class="step active">Checkout</span></a
+            >
+
+            <a href="#"><span class="step">Order complete</span></a>
+          </h5>
+        </div>
+        <div class="row">
+          <div class="col-md-7">
+            <form action="thankyou.html" method="post" id="checkoutForm">
+              <div class="con">
+                <h3>Contact</h3>
+                <div class="row  fill">
+                  <div class="col">
+                    <label for="inputtext" class="form-label from_txt"
+                      >Phone number:</label
+                    >
+                    <input
+                      type="tel"
+                      name="phone_number"
+                      class="form-control fild"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="exampleInputEmail1" class="form-label from_txt"
+                      >Email Address:</label
+                    >
+                    <input
+                      type="email"
+                      name="email_address"
+                      class="form-control fild"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="con">
+                <h3>Shipping address</h3>
+                <div class="row  fill">
+                  <div class="col">
+                    <label for="inputtext" class="form-label from_txt"
+                      >First name:</label
+                    >
+                    <input
+                      type="text"
+                      name="first_name"
+                      class="form-control fild"
+                      aria-label="First name"
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="exampleInputEmail1" class="form-label from_txt"
+                      >Last name:</label
+                    >
+                    <input
+                      type="text"
+                      name="last_name"
+                      class="form-control fild"
+                      aria-label="Last name"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label for="inputtext" class="form-label from_txt"
+                    >Address:</label
+                  >
+                  <input
+                    type="text"
+                    id="inputtext"
+                    name="address"
+                    class="form-control fild single_from"
+                    aria-describedby="text"
+                  />
+                </div>
+                <div class="from_chng d-flex">
+                  <div class="row g-3 fill">
+                    <div class="col-sm-4">
+                      <label for="inputtext" class="form-label from_txt"
+                        >City:</label
+                      >
+                      <input
+                        type="text"
+                        name="city"
+                        class="form-control short_from fild"
+                        aria-label="City"
+                      />
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="inputtext" class="form-label from_txt"
+                        >State:</label
+                      >
+                      <select name="state" class="form-select short_from fild">
+                        <option selected>Select State</option>
+                        <option>California</option>
+                        <option>New York</option>
+                        <option>Texas</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-4">
+                      <label for="inputtext" class="form-label from_txt"
+                        >Zip Code:</label
+                      >
+                      <input
+                        name="zip_code"
+                        type="tel"
+                        class="form-control short_from fild"
+                        aria-label="Zip"
+                        maxlength="5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="con">
+                <div
+                  class="d-flex ship-div"
+                  style="justify-content: space-between"
+                >
+                  <h3>Billing same as Shipping</h3>
+                  <div class="radio-group">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="BillSameAsShip"
+                        id="inlineRadio1"
+                        value="yes"
+                        checked
+                      />
+                      <label
+                        class="form-check-label label-text"
+                        for="inlineRadio1"
+                        >YES</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="BillSameAsShip"
+                        id="inlineRadio2"
+                        value="no"
+                      />
+                      <label
+                        class="form-check-label label-text"
+                        for="inlineRadio2"
+                        >NO</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="bill-data" style="display: none;">
+                  <div class="row  fill">
+                    <div class="col">
+                      <label for="inputtext" class="form-label from_txt"
+                        >Billing First Name:</label
+                      >
+                      <input
+                        type="text"
+                        name="billing_first_name"
+                        class="form-control fild"
+                        aria-label="First name"
+                      />
+                    </div>
+                    <div class="col">
+                      <label
+                        for="exampleInputEmail1"
+                        class="form-label from_txt"
+                        >Billing Last Name:</label
+                      >
+                      <input
+                        type="text"
+                        name="billing_last_name"
+                        class="form-control fild"
+                        aria-label="Last name"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="inputtext" class="form-label from_txt"
+                      >Billing Address:</label
+                    >
+                    <input
+                      type="text"
+                      id="inputtext"
+                      name="billing_address"
+                      class="form-control fild single_from"
+                      aria-describedby="text"
+                    />
+                  </div>
+                  <!-- <div class="from_chng d-flex"> -->
+                  <div class="row g-3 fill">
+                    <div class="col-md-4">
+                      <label for="inputCity" class="form-label from_txt"
+                        >Billing City:</label
+                      >
+                      <input
+                        type="text"
+                        name="billing_city"
+                        class="form-control short_from fild"
+                        id="inputCity"
+                      />
+                    </div>
+                    <div class="col-md-4">
+                      <label class="form-label from_txt"
+                        >Billing Country:</label
+                      >
+                      <select
+                        name="billing_state"
+                        class="form-select short_from fild"
+                      >
+                        <option selected>Select State</option>
+                        <option>California</option>
+                        <option>New York</option>
+                        <option>Texas</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputZip" class="form-label from_txt"
+                        >Billing Zip Code:</label
+                      >
+                      <input
+                        type="tel"
+                        name="billing_zip_code"
+                        class="form-control short_from fild"
+                        id="inputZip"
+                        maxlength="5"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- </div>-->
+              </div>
+
+              <div class="con">
+                <div class="ca d-flex" style="justify-content: space-between">
+                  <h3>Payment Method</h3>
+                  <img src="images/card 1.svg" alt="" />
+                </div>
+                <div>
+                  <label for="inputtext" class="form-label from_txt"
+                    >Card number:</label
+                  >
+                  <input
+                    type="text"
+                    id="inputtext"
+                    name="card_number"
+                    class="form-control fild single_from"
+                    aria-describedby="text"
+                  />
+                </div>
+                <div>
+                  <label for="inputtext" class="form-label from_txt"
+                    >Card holder name:</label
+                  >
+                  <input
+                    type="text"
+                    id="inputtext"
+                    name="card_holder_name"
+                    class="form-control fild single_from"
+                    aria-describedby="text"
+                  />
+                </div>
+
+                <div class="row g-3 fill">
+                  <div class="col-md-4">
+                    <label class="form-label from_txt">Month:</label>
+                    <select
+                      name="exp_month"
+                      class="form-select short_from fild"
+                    >
+                      <option selected>Month</option>
+                      <option>January</option>
+                      <option>February</option>
+                      <option>March</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label class="form-label from_txt">Year:</label>
+                    <select name="exp_year" class="form-select short_from fild">
+                      <option selected>Year</option>
+                      <option>2001</option>
+                      <option>2002</option>
+                      <option>2003</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputZip" class="form-label from_txt"
+                      >CVV:</label
+                    >
+                    <input
+                      type="text"
+                      name="cvv"
+                      class="form-control short_from fild"
+                      id="inputZip"
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" class="place_btn">Place Order Now</button>
+              </div>
+            </form>
+            <div class="back_btn desk_show">
+              <button class="back">
+                <a href="cart.html"
+                  ><i class="fa fa-angle-double-left" aria-hidden="true"></i
+                  >Back to cart</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="cuopn_details cupon">
+              <h2>Your Order Summary</h2>
+              <h3>COUPONS</h3>
+              <div class="cupon_coad">
+                <img src="images/cupon.svg" alt="" />
+                <h5>Apply Coupons</h5>
+                <button class="cupon_btn">Check</button>
+              </div>
+              <h4>Price Details (<span total-items></span> items)</h4>
+              <div class="parent_price_details price_list bright">
+                <h6>Subtotal:</h6>
+                <h5><span class="col_cng" subtotal-ammount>Rs. 2,398</span></h5>
+              </div>
+              <div class="parent_price_details price_list">
+                <h6>Discount on MRP:</h6>
+                <h6><span class="cross" discount-ammount>-Rs. 4,195</span></h6>
+              </div>
+              <div class="parent_price_details price_list chn">
+                <h6>Coupon discount:</h6>
+                <h5>Apply Coupon</h5>
+              </div>
+              <div class="parent_price_details price_list">
+                <h6>Shipping Fee:</h6>
+                <h6><small>Free</small></h6>
+              </div>
+              <div class="parent_price_details price_list bright spacing">
+                <h6><span class="col_cng">Total Amount:</span></h6>
+                <h6><span class="col_cng" total-ammount>Rs. 2,398</span></h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="back_btn mob_show">
+            <button class="back">
+              <a href="cart.html"
+                ><i class="fa fa-angle-double-left" aria-hidden="true"></i>Back
+                to cart</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------contact end------------------------------------>
+
+    <!------------------------------------footer start------------------------------------>
+     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 ">
+            <div class="box">
+              <img src="images/logo white.svg" alt="" />
+              <h5>
+                Complete your style with awesome clothes<br />
+                from us.
+              </h5>
+            </div>
+            <div class="footer-icon d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Company</h4>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="home.html">About</a></li>
+              <li><a href="cheackout.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Quick Link</h4>
+              <li><a href="#">Share Location</a></li>
+              <li><a href="#">Orders Tracking</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Legal</h4>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------footer end------------------------------------>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/style.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/thankyou.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <!----------------------------------header start---------------------------------->
+     <header class="header bg-light">
+      <div id="header">
+        <div class="container header_wrap">
+          <div class="logo">
+            <a href="#" class="text-uppercase"
+              ><img src="images/logo.png" alt="logo" class="logo-img"
+            /></a>
+          </div>
+
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+
+          <div class="menu-overlay"></div>
+
+          <!-- navigation menu start -->
+
+          <nav class="nav-menu d-lg-block">
+            <div class="close-nav-menu"><i class="fas fa-times"></i></div>
+
+            <ul class="menu fw-medium text-uppercase" list-type="none">
+              <li class="menu-item menu-item-has-children">
+                <a href="home.html" class="active">Home </a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="blog.html">Blog</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-md-none d-sm-block">
+              <ul class="icon_list">
+                <li>
+                  <a href="#"><img src="images/user.svg" alt="cart" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/cart.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><img src="images/love.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5>0</h5>
+                  </div>
+                </li>
+              </ul>
+              <div class="wrap">
+                <form method="get" class="search-form" action="shop.html">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="searchTerm"
+                      name="s"
+                      placeholder="What are you looking for?"
+                    />
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navigation menu end -->
+          <div class="cart_icon d-md-block d-sm-none d-none">
+            <ul class="icon_list">
+              <li>
+                <div class="input-box search">
+                  <form method="get" class="search-form" action="shop.html">
+                    <input
+                      class="search-field"
+                      id="search-field"
+                      type="text"
+                      name="s"
+                      value=""
+                      aria-required="false"
+                      autocomplete="off"
+                      placeholder="Search&hellip;"
+                    />
+                    <button class="search-submit">
+                      <span class="screen-reader-text">Search</span
+                      ><a href="#"
+                        ><img
+                          src="images/search.svg"
+                          alt="cart"
+                          class="search_icon"
+                      /></a>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a href="product.html"><img src="images/user.svg" alt="cart" /></a>
+              </li>
+              <li>
+                <a href="cart.html"><img src="images/cart.svg" alt="cart" /></a>
+                <div class="cart_count">
+                  <h5>0</h5>
+                </div>
+              </li>
+
+              <li>
+                <a href="wishlist.html"><img src="images/love.svg" alt="cart" /></a>
+                <div class="count">
+                  <h5>0</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------header end---------------------------------->
+
+    <!------------------------------------thank you start------------------------------------>
+    <section class="thanyou cart">
+      <div class="container">
+        <div class="contact_heading">
+          <h5>
+            <a href="./cart.html"><span class="step active">Cart</span></a>
+
+            <a href="./cheackout.html"
+              ><span class="step active">Checkout</span></a
+            >
+
+            <a href="#"><span class="step active">Order complete</span></a>
+          </h5>
+        </div>
+        <div class="thank">
+          <img src="images/thankyou.svg" alt="" />
+          <h2>Thank You !</h2>
+          <h4>Your order will arrive in 2 - 3 shipping days.</h4>
+          <h5>Your order number is : <span order-number>6578GF3419</span></h5>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------thank you end------------------------------------>
+
+    <!------------------------------------footer start------------------------------------>
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 ">
+            <div class="box">
+              <img src="images/logo white.svg" alt="" />
+              <h5>
+                Complete your style with awesome clothes<br />
+                from us.
+              </h5>
+            </div>
+            <div class="footer-icon d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Company</h4>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="home.html">About</a></li>
+              <li><a href="cheackout.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Quick Link</h4>
+              <li><a href="#">Share Location</a></li>
+              <li><a href="#">Orders Tracking</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Legal</h4>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------footer end------------------------------------>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

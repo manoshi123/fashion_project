@@ -1,0 +1,286 @@
+/* ////////////////////////////////////shop start//////////////////////////////////// */
+/* ....................................banner start................................. */
+.shop-bg{
+background-image: url(../images/shopbg.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 160px 0;
+}
+.shop-bg h2{
+  font-size: var(--heading);
+  font-weight: 600;
+  color: var(--header);
+  padding-bottom: 16px;
+}
+
+/* .....................................banner end................................. */
+
+/* .......................................Special Products start........................ */
+.Special_Products{
+  padding: 80px 0;
+  text-align: center;
+}
+.Special_Products h2{
+    font-size: var(--heading);
+  font-weight: 600;
+  color: var(--header);
+  padding-bottom: 30px;
+  text-transform: uppercase;
+}
+.cheack{
+  text-align: left;
+}
+.cheack h3{
+  font-size: 2rem;
+  color: var(--header);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+.form-check .option {
+    color: #504E4E;
+    padding-bottom: 8px;
+    font-size: 1rem;
+}
+.tick:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* .option img{
+  width: 90%;
+} */
+.model{
+  padding-top: 40px;
+  position: relative;
+}
+.model_img img{
+  width: 100%;
+}
+.model_txt h5{
+font-size: 1.25rem;
+font-weight: 300;
+padding-bottom: 10px;
+color: var(--primary);
+}
+.model_txt h4{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  color: var(--primary);
+  font-weight: 400;
+}
+.model_btn{
+  background-color: var(--primary);
+  color: var(--header);
+  border: none;
+}
+.model_txt {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 100%;
+    top: 8%;
+    left: 0;
+    padding: 169px 0;
+}
+.model_txt:hover{
+  opacity: 1;
+  visibility: visible;
+}
+
+.shop_icon {
+    transform: translateY(-68px);
+    height: 4px;
+}
+
+.shop_text h4{
+     font-size: 0.97rem;
+}
+.shop_text h5{
+  font-size: .70rem;
+}
+.shop_text h6{
+  font-size: .70rem;
+  text-decoration: line-through;
+}
+.shop_text img{
+  width: 40%;
+}
+.form-check .form-check-input {
+    float: left!important;
+    margin-left:-1.5em!important;
+    margin-top: 6px!important;
+}
+.form-check-input:checked[type=checkbox] {
+    background-image: url("../images/check-solid.svg");
+}
+.form-check {
+    min-height: 2rem!important;
+}
+.form-check-label{
+    font-weight: 500;
+    color: #504E4E;
+}
+.model_btn{
+    background-color: #fff;
+    color: #000;
+    width: 156px;
+    height: 48px;
+    border-radius: 48px;
+    font-size: 1.125rem;
+}
+.linkup .active {
+    color: #000;
+}
+.linkup {
+    padding-bottom: 30px;
+}
+.linkup a {
+    font-size: 1.5rem;
+    color: #6B6B6B;
+}
+.form-check-input:checked {
+    background-color: #fff;
+    border-color: #000;
+}
+.form-check-input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+.parent_box {
+    position: relative;
+}
+.product-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+.shop_icon{
+  justify-content: center;
+}
+.filter .filter-text{
+  padding: 8px 20px;
+  background-color: #B1927E;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 5px;
+}
+  
+/* .shop_icon img {
+    color: var(--primary);
+    background-color: #B1927E;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+} */
+.product-txt {
+    text-align: left;
+    margin-bottom: 30px;
+}
+.product-txt h4 {
+    font-size: 1.25rem;
+    color: #191919;
+    font-weight: 500;
+    padding-top: 20px;
+}
+.price {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 0;
+}
+.product-txt h5 {
+    font-size: 1rem;
+    color: #B1927E;
+    font-weight: 500;
+}
+.product-txt h6 {
+    font-size: 1rem;
+    color: #747474;
+    font-weight: 500;
+    text-decoration: line-through;
+   
+}
+/* .......................................Special Products end........................... */
+
+/* /////////////////////////////////////shop end///////////////////////////////////// */
+
+@media(max-width:1200px){
+ 
+  .product-txt h4{
+    font-size: 1rem;
+  }
+  .product-txt h5, .product-txt h6{
+    font-size: 0.80rem;
+  }
+
+}
+@media(max-width:992px){
+    
+    .price{
+          padding: 0.4rem 0 0;
+    }
+    .product-txt img{
+          width: 32%;
+    }
+}
+@media(max-width:768px){
+    .arrow{
+    transform: rotate(45deg) translate(38px,38px);
+      opacity: 0.6;
+    
+  }
+  #filter{
+  display: none;
+}
+  .arrow {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+    bottom: -5px;
+    left: -10px;
+    transition: 0.4s ease;
+    margin-top: 2px;
+    text-align: left;
+    transform: rotate(45deg);
+    float: right;
+}
+  .arrow:before, .arrow:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: #000;
+    transition: 0.4s ease;
+}
+  .arrow:after {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 5px;
+}
+.filter.active .arrow:before {
+    transform: translate(10px, 0);
+}
+.filter.active .arrow:after{
+    transform: rotate(90deg) translate(10px, 0);
+}
+
+}
+@media(max-width:538px){
+   .filter .filter-text {
+    padding: 5px 13px;
+    font-size: 18px;
+   }
+   .filter-text img{
+    width: 15px
+   }
+}

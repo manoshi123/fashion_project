@@ -1,0 +1,68 @@
+/* //////////////////////////////////////blog start/////////////////////////////////// */
+/* ....................................banner start.................................. */
+.blog_bg{
+background-image: url(../images/blogbg@2x.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 160px 0;
+}
+.blog_bg h2{
+  font-size: var(--heading);
+  font-weight: 600;
+  color: var(--header);
+  padding-bottom: 16px;
+}
+.linkup .active{
+  color:var(--header) ;
+  
+}
+.linkup a{
+  color: #6B6B6B;
+  font-weight: 500;
+}
+/* .....................................banner end............................. */
+
+/* ....................................latest_blog start.......................... */
+.latest_blog{
+  padding: 80px 0;
+  text-align: center;
+}
+.latest_blog h2{
+  font-size: var(--heading);
+  font-weight: 600;
+  color: var(--header);
+  padding-bottom: 50px;
+}
+.blog-img img{
+  width: 100%;
+}
+.blog-txt{
+  text-align: left;
+}
+.blog-txt i{
+  padding-right: 10px;
+}
+.blog-txt h5{
+  font-size:1.125rem ;
+  color: #B1927E;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.blog-txt h3{
+  font-size: 1.3125rem;
+  font-weight: 600;
+  color: var(--header);
+  padding-top: 10px;
+  line-height: 32px;
+}
+.blog-txt p{
+  color: #747474;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 30px;
+  padding-top: 16px;
+}
+/* ..................................latest_blog end.............................. */
+/* ////////////////////////////////////blog end////////////////////////////////// */

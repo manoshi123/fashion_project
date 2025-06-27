@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashion</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <!----------------------------------header start---------------------------------->
+     <header class="header bg-light">
+      <div id="header">
+        <div class="container header_wrap">
+          <div class="logo">
+            <a href="#" class="text-uppercase"
+              ><img src="images/logo.png" alt="logo" class="logo-img"
+            /></a>
+          </div>
+
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+
+          <div class="menu-overlay"></div>
+
+          <!-- navigation menu start -->
+
+          <nav class="nav-menu d-lg-block">
+            <div class="close-nav-menu"><i class="fas fa-times"></i></div>
+
+            <ul class="menu fw-medium text-uppercase" list-type="none">
+              <li class="menu-item menu-item-has-children">
+                <a href="home.html" class="active">Home </a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="shop.html">Shop</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="blog.html">Blog</a>
+              </li>
+
+              <li class="menu-item menu-item-has-children">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-md-none d-sm-block">
+              <ul class="icon_list">
+                <li>
+                  <a href="#"><img src="images/user.svg" alt="cart" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/cart.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5 cart-count>0</h5>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"><img src="images/love.svg" alt="cart" /></a>
+                  <div class="count">
+                    <h5 wishlist-count>0</h5>
+                  </div>
+                </li>
+              </ul>
+              <div class="wrap">
+                <form method="get" class="search-form" action="shop.html">
+                  <div class="search">
+                    <input
+                      type="text"
+                      class="searchTerm"
+                      name="s"
+                      placeholder="What are you looking for?"
+                    />
+                    <button type="submit" class="searchButton">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <!-- navigation menu end -->
+          <div class="cart_icon d-md-block d-sm-none d-none">
+            <ul class="icon_list">
+              <li>
+                <div class="input-box search">
+                  <form method="get" class="search-form" action="shop.html">
+                    <input
+                      class="search-field"
+                      id="search-field"
+                      type="text"
+                      name="s"
+                      value=""
+                      aria-required="false"
+                      autocomplete="off"
+                      placeholder="Search&hellip;"
+                    />
+                    <button class="search-submit">
+                      <span class="screen-reader-text">Search</span
+                      ><a href="#"
+                        ><img
+                          src="images/search.svg"
+                          alt="cart"
+                          class="search_icon"
+                      /></a>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a href="product.html"><img src="images/user.svg" alt="cart" /></a>
+              </li>
+              <li>
+                <a href="cart.html"><img src="images/cart.svg" alt="cart" /></a>
+                <div class="cart_count">
+                  <h5 cart-count>0</h5>
+                </div>
+              </li>
+
+              <li>
+                <a href="wishlist.html"><img src="images/love.svg" alt="cart" /></a>
+                <div class="count">
+                  <h5 wishlist-count>0</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!----------------------------------header end---------------------------------->
+
+    <!------------------------------------cart start------------------------------------>
+
+    <section class="addtocart">
+      <div class="container">
+        <div class="linkup">
+          <a href="home.html">Home /</a>
+          <a href="shop.html">Shop/</a>
+          <a href="product.html" class="active">Product details </a>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="swiper-container slider">
+              <div class="swiper-wrapper" data-slider>
+                <div class="swiper-slide">
+                  <img src="images/product_bigimg1.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/product_smallimg2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="images/product_smallimg3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-container slider-thumbnail">
+              <div class="swiper-wrapper" data-slider>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product_smallimg1.png"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product_smallimg2.png"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/product_smallimg3.png"
+                    alt=""
+                    class="rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-1">
+            <div class="details-section">
+              <h2 data-product-name>
+                French Blue Puff Sleeve Mini Dress with Square Neck and Front
+                Tie
+              </h2>
+              <div class="price pp">
+                <span class="current-price">Rs. <span data-price></span></span>
+                <span class="original-price"
+                  >Rs. <span data-compare-at-price></span
+                ></span>
+                <span class="discount">(<span data-discount></span>% OFF)</span>
+              </div>
+              <p class="tax-info">Inclusive of all taxes</p>
+
+              <div class="size-select" data-variant>
+                <p>Select Size</p>
+                <a href="#"><button>S</button></a>
+                <a href="#"><button>M</button></a>
+                <a href="#"><button>L</button></a>
+                <a href="#"><button>XL</button></a>
+              </div>
+
+              <div class="actions">
+                <button class="add-to-cart" add-to-cart>
+                  Add to Cart <img src="images/whitebag.svg" alt="" />
+                </button>
+                <button class="wishlist" add-to-wishlist>
+                  Wishlist <i class="fa-regular fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="delivery-check">
+                <h4>Delivery Options <img src="images/car.svg" alt="" /></h4>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control fill"
+                    placeholder="Enter pincode"
+                    aria-label="Recipient’s username"
+                    aria-describedby="button-addon2"
+                  />
+                  <button
+                    class="btn btn-outline-secondary cheack_btn"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Check
+                  </button>
+                </div>
+                <p>
+                  Please enter PIN code to check delivery time & Pay on Delivery
+                  Availability
+                </p>
+              </div>
+
+              <ul class="features">
+                <li>
+                  <i class="fa fa-circle" aria-hidden="true"></i> 100% Original
+                  Products
+                </li>
+                <li>
+                  <i class="fa fa-circle" aria-hidden="true"></i>Pay on delivery
+                  might be available
+                </li>
+                <li>
+                  <i class="fa fa-circle" aria-hidden="true"></i> Easy 7 days
+                  returns and exchanges
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------cart end------------------------------------>
+
+    <!--------------------------------------product_details start------------------------------------>
+    <section class="product_details">
+      <div class="container">
+        <div class="tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" onclick="showTab('details')">
+              Product Details
+            </button>
+            <button class="tab-btn" onclick="showTab('description')">
+              Description
+            </button>
+          </div>
+
+          <div class="tab-content active" id="details">
+            <!-- Product Details content here -->
+            <div class="detail_txt" data-product-desecription>
+              <h3>French Blue Puff Sleeve Mini Dress</h3>
+              <p>
+                Turn heads in our French Blue Puff Sleeve Mini Dress, where
+                classic charm meets modern romance. This<br />
+                flattering mini dress features a structured square neckline and
+                voluminous puff sleeves that bring a soft,<br />
+                feminine edge to your look. The front tie detail adds a touch of
+                playful elegance, while the fitted bodice and<br />
+                flared hem create a beautifully balanced silhouette.
+              </p>
+              <p>
+                Crafted from a lightweight, breathable fabric in a dreamy French
+                blue hue, this dress is perfect for sunny<br />
+                days, brunches, or a chic date night. Whether paired with
+                strappy heels or casual sandals, it’s your go-to<br />
+                piece for effortless style.
+              </p>
+
+              <h3>Details:</h3>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Vibrant French
+                blue color
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Puff sleeves with
+                elastic cuffs
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Flattering square
+                neckline
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Adjustable front
+                tie detail
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Mini length with
+                subtle flare
+              </h6>
+
+              <h3>Style Tip:</h3>
+              <p>
+                Pair with gold jewelry and a woven handbag for a soft,
+                summer-ready look.
+              </p>
+            </div>
+            <!-- Add your details and style tips here -->
+          </div>
+
+          <div class="tab-content" id="description">
+            <!-- Put general product description or additional content here -->
+            <div class="detail_txt">
+              <h3>French Blue Puff Sleeve Mini Dress</h3>
+              <p>
+                Turn heads in our French Blue Puff Sleeve Mini Dress, where
+                classic charm meets modern romance. This<br />
+                flattering mini dress features a structured square neckline and
+                voluminous puff sleeves that bring a soft,<br />
+                feminine edge to your look. The front tie detail adds a touch of
+                playful elegance, while the fitted bodice and<br />
+                flared hem create a beautifully balanced silhouette.
+              </p>
+              <p>
+                Crafted from a lightweight, breathable fabric in a dreamy French
+                blue hue, this dress is perfect for sunny<br />
+                days, brunches, or a chic date night. Whether paired with
+                strappy heels or casual sandals, it’s your go-to<br />
+                piece for effortless style.
+              </p>
+
+              <h3>Details:</h3>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Vibrant French
+                blue color
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Puff sleeves with
+                elastic cuffs
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Flattering square
+                neckline
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Adjustable front
+                tie detail
+              </h6>
+              <h6>
+                <i class="fa fa-circle" aria-hidden="true"></i>Mini length with
+                subtle flare
+              </h6>
+
+              <h3>Style Tip:</h3>
+              <p>
+                Pair with gold jewelry and a woven handbag for a soft,
+                summer-ready look.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Products Similar banner-text">
+      <div class="container">
+        <h2>Similar Products</h2>
+        <div class="row">
+          <div class="col-md-3" id="product-list">
+            <div class="parent_box">
+              <div class="product-img product-img1">
+                <a href="/product.html?id={{__ID__}}"
+                  ><img src="images/product-blank.png"
+                /></a>
+              </div>
+
+              <div class="product_icon d-flex justify-content-center">
+                 <a href="/product.html?id={{__ID__}}"
+                   class="view"> view details<img src="images/mdi-light_eye.svg" alt=""
+                /></a>
+                
+              </div>
+
+              <div class="product-txt">
+                <a href="/product.html?id={{__ID__}}">
+                  <h4>{{__TITLE__}}</h4>
+                </a>
+                <div class="price d-flex">
+                  <h5>Rs. {{__PRICE__}}</h5>
+                  <h6>Rs. {{__COMPARE_AT_PRICE__}}</h6>
+                  <h5>
+                    <span class="discount">({{__DISCOUNT__}}% OFF)</span>
+                  </h5>
+                </div>
+                <img src="images/Group-109.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------------------product_details end------------------------------------>
+
+    <!------------------------------------footer start------------------------------------>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="box">
+              <img src="images/logo white.svg" alt="" />
+              <h5>
+                Complete your style with awesome clothes<br />
+                from us.
+              </h5>
+            </div>
+            <div class="footer-icon d-flex">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Company</h4>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="home.html">About</a></li>
+              <li><a href="cheackout.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Quick Link</h4>
+              <li><a href="#">Share Location</a></li>
+              <li><a href="#">Orders Tracking</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <ul class="list">
+              <h4>Legal</h4>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--------------------------------------footer end-------------------------------------->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

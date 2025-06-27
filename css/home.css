@@ -1,0 +1,368 @@
+/* ............................home banner start............................. */
+
+.banner{
+    background-image: url(../images/banner@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+
+}
+.banner-text h2 {
+    color: var(--header);
+    font-size: var(--heading);
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 73px;
+    padding: 20px 0;
+}
+.banner-text p {
+    font-family: var(--font-family);
+    font-size: var(--content);
+    font-weight: 400;
+    color: #191818;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+.all-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 35px;
+    height: 75px;
+    border-radius: 48px;
+    font-size: 1.3rem;
+}
+.all-btn:hover{
+    background-color: var(--background-color);
+    color: var(--content-color);
+    transition: 1.25s ease;
+    font-weight: 500;
+}
+/* .............................home banner end........................ */
+
+/* ............................category start......................... */
+
+.category{
+  padding: 60px 0;
+  text-align: center;
+}
+.category h2{
+  font-size: var(--heading);
+  font-weight: 600;
+  color: var(--header);
+  padding-bottom: 50px;
+}
+
+.main-box{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-box {
+    border: 3px solid #DCC4B4;
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.category-txt h4{
+  padding-top: 25px;
+  font-weight: 600;
+  color: var(--header);
+  font-size:  1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.category-txt h4 a{
+  color: #000;
+}
+/* .............................category end....................... */
+
+/* ............................Products start........................... */
+
+.Products{
+  padding: 60px 0;
+  text-align: center;
+}
+.Products h2 {
+    text-transform: uppercase;
+    font-size: var(--heading);
+    color: var(--header);
+    padding-bottom: 60px;
+    font-weight: 600;
+}
+.product-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.product-txt{
+  text-align: left;
+margin-bottom: 30px;
+}
+.product-txt h4{
+  font-size: 1.25rem;
+  color:#191919;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.product-txt h5 {
+    font-size: 1rem;
+    color: #4B4B4B;
+    font-weight: 500;
+
+}
+.product-txt h6{
+  font-size: 1rem;
+  color: #747474;
+  font-weight: 500;
+}
+.discount{
+ padding: 0 10px;
+ color: #B1927E;
+}
+.price{
+ 
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 0;
+
+}
+
+.parent_box {
+  position: relative;
+}
+.product_icon {
+    transform: translateY(-68px);
+    height: 4px;
+}
+ .product_icon img {
+    width: 20px;
+    margin-right: 5px;
+}    
+   
+
+
+/* .........................................Sale start................................ */
+.Sale{
+  background-image: url(../images/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+.Sale-txt{
+    justify-self: right;
+}
+.Sale-txt h2{
+    color: var(--header);
+    font-size: var(--heading);
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 58px;
+    padding: 20px 0;
+}
+.Sale-txt p {
+    font-family: var(--font-family);
+    font-size: var(--content);
+    font-weight: 400;
+    color: #191818;;
+    padding-bottom: 30px;
+}
+/* ...................................sale end................................ */
+
+/* ......................................arrival start............................ */
+.arrival{
+  padding: 80px 0;
+  text-align: center;
+}
+
+.arrival h2{
+  text-transform: uppercase;
+  font-size: var(--heading);
+  color: var(--header);
+  padding-bottom: 50px;
+  font-weight: 600;
+}
+/* .....................................arrival end............................ */
+
+/* ....................................testimonial start........................... */
+
+.testimonial{
+  padding: 40px 0;
+  text-align: center;
+}
+.testi{
+  border-radius: 50%;
+  border: 4px solid #B1927E;
+}
+.testimonial h2{
+  text-transform: uppercase;
+  font-size: var(--heading);
+  color: var(--header);
+  padding-bottom: 30px;
+  font-weight: 600;
+}
+.testimonial p {
+     font-family: "Inter", sans-serif;
+     font-style: italic;
+    font-size: var(--content);
+    font-weight: 200;
+    color: var(--content-color);
+    padding: 30px 0;
+}
+.testimonial h4{
+  font-size: var(--content);
+  color: var(--header);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.slide{
+  text-align: center;
+}
+.slide_pic{
+    justify-items: center;
+}
+.testimonial .swiper-pagination {
+  position: static;
+    padding-top: 1rem;
+}
+.testimonial .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 3rem;
+    border-radius: 2.3rem;
+    background-color: #000;
+}
+/* ...................................gallery start................................. */
+.gallery{
+  padding: 40px 0;
+
+}
+.parent{
+  position: relative;
+  text-align: center;
+}
+.insta {
+    position: absolute;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.41);
+   border-radius: 15px;
+    padding: 80px 0;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    width: 100%;
+}
+.parent:hover .insta{
+  visibility: visible;
+  opacity: 1;
+}
+.insta i {
+    color: var(--background-color);
+    font-size: 2rem;
+    padding-left: 0px;
+}
+
+
+/* ....................................gallery end.................................... */
+
+/* ......................................partners start..................................... */
+.partners {
+  padding: 50px 0;
+  background-color: #DCC4B4;
+  overflow: hidden; /* Hide overflow to make scroll effect clean */
+}
+
+.logo-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.parent-partners {
+  display: flex;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+.parent-partners img {
+  margin: 0 20px;
+  height: 60px;
+  object-fit: contain;
+}
+.parent img{
+  width: 100%;
+
+}
+.parent-partners img:hover {
+  background-color: #DCC4B4;
+  box-shadow: 0px 3px 7px -1px #9b9999;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+@media (max-width: 1200px) {
+    .product-txt h4 {
+        font-size: 1rem;
+    }
+   
+        .product-txt h5, .product-txt h6 {
+        font-size: 0.80rem;
+    }
+}
+
+@media (max-width: 1024px){
+  .product-txt h5, .product-txt h6 {
+        font-size: 0.70rem;
+    }
+        .product-txt h6 {
+        font-size: 0.70rem;
+    }
+      
+    .price{
+    align-items: flex-start;
+    padding: 0.5rem 0 0;
+    flex-direction: column;
+}
+.discount{
+  padding: 0;
+}
+.product-txt img{
+      width: 70px;
+}
+}
+@media (max-width: 992px){
+  /* .product_icon img{
+    height: 30px;
+    width: 30px;
+        padding: 8px;
+  } */
+}
+@media (max-width: 768px){
+      /* .product_icon img {
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+    } */
+    .partners {
+    padding: 24px 0;
+    }
+    .partners{
+      padding: 15px 0;
+    }
+   
+}
+@media (max-width: 451px){
+    
+}
+@media (max-width: 390px){
+    
+}
+/* .....................................partners end........................................... */
+/* /////////////////////////////////////home end/////////////////////////////////// */
