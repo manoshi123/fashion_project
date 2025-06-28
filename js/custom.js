@@ -1,9 +1,16 @@
 const APIURL = "https://product-api-mz9q.onrender.com";
 let getPageName = (url) => {
   const pathname = new URL(url).pathname;
-  const segments = pathname.split('/');
-  const lastSegment = segments.pop() || segments.pop(); // handle trailing slash
-  return lastSegment || 'index.html'; // fallback if no filename
+  const segments = pathname.split('/').filter(Boolean); // remove empty segments
+  const lastSegment = segments[segments.length - 1];
+
+  // If it contains a dot (.), it's a file — return as-is
+  if (lastSegment && lastSegment.includes('.')) {
+    return lastSegment;
+  }
+
+  // If no file in path, return "index.html" or empty string
+  return 'index.html'; // or return '' if you prefer
 }
 
 
