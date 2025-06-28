@@ -1,14 +1,22 @@
 const APIURL = "https://product-api-mz9q.onrender.com";
-hideLoader = function () {
+let getPageName = (url) => {
+  const pathname = new URL(url).pathname;
+  const segments = pathname.split('/');
+  const lastSegment = segments.pop() || segments.pop(); // handle trailing slash
+  return lastSegment || 'index.html'; // fallback if no filename
+}
+
+
+let hideLoader = function () {
   const loader = document.querySelector(".loader");
   if (loader) {
     loader.style.display = "none";
   }
 };
 $(document).ready(function () {
-  console.log(window.location.pathname);
-
-  switch (window.location.pathname) {
+  let pageName = getPageName(window.location.href);
+  console.log("Page Name:", pageName);
+  switch (pageName) {
     case "/index.html":
     case "/":
       $.ajax({
