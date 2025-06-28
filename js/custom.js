@@ -17,8 +17,7 @@ $(document).ready(function () {
   let pageName = getPageName(window.location.href);
   console.log("Page Name:", pageName);
   switch (pageName) {
-    case "/index.html":
-    case "/":
+    case "index.html":
       $.ajax({
         url: `${APIURL}/products?limit=8&start=0`,
         method: "GET",
@@ -79,7 +78,7 @@ $(document).ready(function () {
       });
       break;
 
-    case "/product.html":
+    case "product.html":
       window.Product = [];
       const urlParams = new URLSearchParams(window.location.search);
       const productId = urlParams.get("id");
@@ -171,7 +170,7 @@ $(document).ready(function () {
 
       break;
 
-    case "/cart.html":
+    case "cart.html":
       const cartData = JSON.parse(localStorage.getItem("cart")) || [];
       const cartItemHtml = document.querySelector("[cart-items]");
       cartItemHtml.innerHTML = cartData
@@ -253,7 +252,7 @@ $(document).ready(function () {
 
       break;
 
-    case "/wishlist.html":
+    case "wishlist.html":
       const wishlistData = JSON.parse(localStorage.getItem("wishlist")) || [];
       const wishlistItemHtml = document.querySelector("[wishlist-items]");
       wishlistItemHtml.innerHTML = wishlistData
@@ -313,9 +312,9 @@ $(document).ready(function () {
 
       break;
 
-    case "/shop.html":
+    case "shop.html":
       break;
-    case "/thankyou.html":
+    case "thankyou.html":
       const customerData = JSON.parse(localStorage.getItem("customer")) || {};
       $("[order-number]").text(customerData.orderNumber || "N/A");
 
