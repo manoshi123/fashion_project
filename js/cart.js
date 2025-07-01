@@ -5,7 +5,7 @@ $(document).ready(function () {
   const cartData = JSON.parse(localStorage.getItem("cart")) || [];
   $("[cart-count]").text(cartData.length);
   updateCartCount();
-  if (window.location.pathname === "/cart.html") {
+  if (window.location.pathname.includes('cart.html')) {
     if (cartData.length > 0) {
       $(".not_found_sec").hide();
       $(".cart_page").show();
@@ -14,7 +14,7 @@ $(document).ready(function () {
       $(".cart_page").hide();
     }
   }
-  if (window.location.pathname === "/wishlist.html") {
+  if (window.location.pathname.includes('wishlist.html')) {
     if (wishlist.length > 0) {
       $(".not_found_sec").hide();
       $(".wishlist_sec").show();
