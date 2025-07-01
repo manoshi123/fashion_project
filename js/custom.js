@@ -179,38 +179,38 @@ $(document).ready(function () {
 
     case "cart.html":
       const cartData = JSON.parse(localStorage.getItem("cart")) || [];
-      const cartItemHtml = document.querySelector("[cart-items]");
-      cartItemHtml.innerHTML = cartData
-        .map((cartItem, index) => {
-          return `
-                <div class="parent_dressitems">
-                  <div class="dressitems_img">
-                    <img src="${cartItem.image}" alt="" />
-                  </div>
-                  <div class="dressitems_txt">
-                    <h3>${cartItem.title}</h3>
-                    <small>In stock</small>
-                    <h6>Size: ${cartItem.variant}</h6>
-                    <div class="quantity-selector">
-                      <button class="qty-btn minus">-</button>
-                      <input type="text" value="${cartItem.quantity}" class="qty-input" readonly />
-                      <button class="qty-btn plus">+</button>
-                    </div>
-                    <div class="price dressitems_price d-flex">
-                      <h5>Rs. ${cartItem.price}</h5>
-                      <h6>Rs. ${cartItem.compare_at_price}</h6>
-                      <h5><span class="discount offer">(${cartItem.discount}% OFF)</span></h5>
-                    </div>
-                    <h4>
-                      <img src="images/leftarrow.svg" alt="" /><span>14 days</span>
-                      return available
-                    </h4>
-                    <div class="remove" remove-from-cart data-id="${cartItem.id}" data-variant="${cartItem.variant}" ><a href="#"><span><img src="images/delete.svg">Remove</span></a></div>
-                  </div>
-                </div>
-            `;
-        })
-        .join("");
+      // const cartItemHtml = document.querySelector("[cart-items]");
+      // cartItemHtml.innerHTML = cartData
+      //   .map((cartItem, index) => {
+      //     return `
+      //           <div class="parent_dressitems">
+      //             <div class="dressitems_img">
+      //               <img src="${cartItem.image}" alt="" />
+      //             </div>
+      //             <div class="dressitems_txt">
+      //               <h3>${cartItem.title}</h3>
+      //               <small>In stock</small>
+      //               <h6>Size: ${cartItem.variant}</h6>
+      //               <div class="quantity-selector">
+      //                 <button class="qty-btn minus">-</button>
+      //                 <input type="text" value="${cartItem.quantity}" class="qty-input" readonly />
+      //                 <button class="qty-btn plus">+</button>
+      //               </div>
+      //               <div class="price dressitems_price d-flex">
+      //                 <h5>Rs. ${cartItem.price}</h5>
+      //                 <h6>Rs. ${cartItem.compare_at_price}</h6>
+      //                 <h5><span class="discount offer">(${cartItem.discount}% OFF)</span></h5>
+      //               </div>
+      //               <h4>
+      //                 <img src="images/leftarrow.svg" alt="" /><span>14 days</span>
+      //                 return available
+      //               </h4>
+      //               <div class="remove" remove-from-cart data-id="${cartItem.id}" data-variant="${cartItem.variant}" ><a href="#"><span><img src="images/delete.svg">Remove</span></a></div>
+      //             </div>
+      //           </div>
+      //       `;
+      //   })
+      //   .join("");
 
       $(document).on("click", "[remove-from-cart]", function () {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
