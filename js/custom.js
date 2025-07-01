@@ -179,38 +179,38 @@ $(document).ready(function () {
 
     case "cart.html":
       const cartData = JSON.parse(localStorage.getItem("cart")) || [];
-      // const cartItemHtml = document.querySelector("[cart-items]");
-      // cartItemHtml.innerHTML = cartData
-      //   .map((cartItem, index) => {
-      //     return `
-      //           <div class="parent_dressitems">
-      //             <div class="dressitems_img">
-      //               <img src="${cartItem.image}" alt="" />
-      //             </div>
-      //             <div class="dressitems_txt">
-      //               <h3>${cartItem.title}</h3>
-      //               <small>In stock</small>
-      //               <h6>Size: ${cartItem.variant}</h6>
-      //               <div class="quantity-selector">
-      //                 <button class="qty-btn minus">-</button>
-      //                 <input type="text" value="${cartItem.quantity}" class="qty-input" readonly />
-      //                 <button class="qty-btn plus">+</button>
-      //               </div>
-      //               <div class="price dressitems_price d-flex">
-      //                 <h5>Rs. ${cartItem.price}</h5>
-      //                 <h6>Rs. ${cartItem.compare_at_price}</h6>
-      //                 <h5><span class="discount offer">(${cartItem.discount}% OFF)</span></h5>
-      //               </div>
-      //               <h4>
-      //                 <img src="images/leftarrow.svg" alt="" /><span>14 days</span>
-      //                 return available
-      //               </h4>
-      //               <div class="remove" remove-from-cart data-id="${cartItem.id}" data-variant="${cartItem.variant}" ><a href="#"><span><img src="images/delete.svg">Remove</span></a></div>
-      //             </div>
-      //           </div>
-      //       `;
-      //   })
-      //   .join("");
+      const cartItemHtml = document.querySelector("[cart-items]");
+      cartItemHtml.innerHTML = cartData
+        .map((cartItem, index) => {
+          return `
+                <div class="parent_dressitems">
+                  <div class="dressitems_img">
+                    <img src="${cartItem.image}" alt="" />
+                  </div>
+                  <div class="dressitems_txt">
+                    <h3>${cartItem.title}</h3>
+                    <small>In stock</small>
+                    <h6>Size: ${cartItem.variant}</h6>
+                    <div class="quantity-selector">
+                      <button class="qty-btn minus">-</button>
+                      <input type="text" value="${cartItem.quantity}" class="qty-input" readonly />
+                      <button class="qty-btn plus">+</button>
+                    </div>
+                    <div class="price dressitems_price d-flex">
+                      <h5>Rs. ${cartItem.price}</h5>
+                      <h6>Rs. ${cartItem.compare_at_price}</h6>
+                      <h5><span class="discount offer">(${cartItem.discount}% OFF)</span></h5>
+                    </div>
+                    <h4>
+                      <img src="images/leftarrow.svg" alt="" /><span>14 days</span>
+                      return available
+                    </h4>
+                    <div class="remove" remove-from-cart data-id="${cartItem.id}" data-variant="${cartItem.variant}" ><a href="#"><span><img src="images/delete.svg">Remove</span></a></div>
+                  </div>
+                </div>
+            `;
+        })
+        .join("");
 
       $(document).on("click", "[remove-from-cart]", function () {
         const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -224,38 +224,38 @@ $(document).ready(function () {
         localStorage.setItem("cart", JSON.stringify(updatedCart));
         window.location.reload();
       });
-      $.ajax({
-        url: `${APIURL}/products?limit=4&start=18`,
-        method: "GET",
-        dataType: "json",
-        success: function (products) {
-          console.log(products);
+      // $.ajax({
+      //   url: `${APIURL}/products?limit=4&start=18`,
+      //   method: "GET",
+      //   dataType: "json",
+      //   success: function (products) {
+      //     console.log(products);
 
-          $.each(products, function (index, product) {
-            // if (index > 13) {
-            //   return true;
-            // }
+      //     $.each(products, function (index, product) {
+      //       // if (index > 13) {
+      //       //   return true;
+      //       // }
 
-            let $productHtml =
-              document.querySelector("#product-list").outerHTML;
+      //       let $productHtml =
+      //         document.querySelector("#product-list").outerHTML;
 
-            $productHtml = $productHtml
-              .replaceAll("images/product-blank.png", product.images[0])
-              .replaceAll("{{__ID__}}", product.id)
-              .replaceAll("{{__TITLE__}}", product.title)
-              .replaceAll("{{__PRICE__}}", product.price)
-              .replaceAll("{{__COMPARE_AT_PRICE__}}", product.compare_at_price)
-              .replaceAll("{{__DISCOUNT__}}", product.discount);
-            let $clonedHtml = $($productHtml);
-            $clonedHtml.removeAttr("id").css("display", "");
+      //       $productHtml = $productHtml
+      //         .replaceAll("images/product-blank.png", product.images[0])
+      //         .replaceAll("{{__ID__}}", product.id)
+      //         .replaceAll("{{__TITLE__}}", product.title)
+      //         .replaceAll("{{__PRICE__}}", product.price)
+      //         .replaceAll("{{__COMPARE_AT_PRICE__}}", product.compare_at_price)
+      //         .replaceAll("{{__DISCOUNT__}}", product.discount);
+      //       let $clonedHtml = $($productHtml);
+      //       $clonedHtml.removeAttr("id").css("display", "");
 
-            $("#product-list").hide().parent().append($clonedHtml);
-          });
-        },
-        error: function () {
-          alert("Failed to load products.");
-        },
-      });
+      //       $("#product-list").hide().parent().append($clonedHtml);
+      //     });
+      //   },
+      //   error: function () {
+      //     alert("Failed to load products.");
+      //   },
+      // });
 
       break;
 
